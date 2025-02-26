@@ -43,7 +43,7 @@ public class FilledArrayPreliminaryTest {
 		int value = 4;
 		int[] actuals = Methods.filledArray(length, value);
 		assertNotNull(actuals);
-		assertEquals(value, actuals.length); // Incorrect: FIXME!
+		assertEquals(length, actuals.length);
 		int[] expecteds = { value, value };
 		assertArrayEquals(expecteds, actuals);
 	}
